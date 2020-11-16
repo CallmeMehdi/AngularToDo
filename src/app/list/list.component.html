@@ -1,0 +1,10 @@
+<div>
+    <ul>
+        <hr>
+        <li *ngFor="let user of users" style="list-style: none;">
+            <app-listitem [user]="user" (clicked)="resend($event)"></app-listitem>
+            <hr>
+        </li>
+        
+    </ul>
+</div>

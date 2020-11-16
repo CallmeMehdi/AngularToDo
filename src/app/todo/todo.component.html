@@ -1,0 +1,26 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name </mat-label>
+      <input matInput placeholder="Your name" value="" [(ngModel)]="firstname" name="firstname">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Content</mat-label>
+      <input matInput placeholder="Content" value="" [(ngModel)]="content" name="content">
+    </mat-form-field>
+    <button mat-raised-button [disabled]="!firstname || !content" (click)="add(firstname,content)">Add todo</button>
+</form>
+
+
+<div>
+    <ul>
+        <li *ngFor="let todo of todos; let i = index" [attr.data-index]="i">
+            {{todo.name}}
+            ***
+            {{todo.content}}
+
+            <button (click)="delete(i)"> Delete </button>
+            <br><br>
+        </li>
+    </ul>
+</div>
