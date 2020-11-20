@@ -1,4 +1,8 @@
-<mat-card class="main-card">
-    <app-list (redirect)="updateDetails($event)"></app-list>
-    <app-details [activeUser]="this.activeUser"></app-details>
-</mat-card>
+<div>
+    <mat-card class="main-card">
+        <app-list (redirect)="updateDetails($event)"></app-list>
+        <app-details [activeUser]="this.activeUser"></app-details>
+    </mat-card>
+    <app-embauches>
+    </app-embauches>
+</div>

@@ -14,6 +14,7 @@ import { RainbowDirective } from './rainbow/rainbow.directive';
 import { TodoComponent } from './todo/todo.component';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
+import { EmbauchesComponent } from './components/embauches/embauches.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     ListitemComponent,
     RainbowComponent,
     RainbowDirective,
-    TodoComponent
+    TodoComponent,
+    EmbauchesComponent,
   ],
   imports: [
     BrowserModule,
